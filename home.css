@@ -267,6 +267,39 @@ footer{
     font-size: 1.25rem;
 }
 /* about */
+/* modal */
+.modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60%;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #143774;
+    padding: 1.5em 0;
+    box-shadow: 0px 0px 6px 2px #666;
+}
+.logo-img{
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.modal-close-btn{
+    background-color: #143774;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+/* modal */
 /* media */
 /* header media */
 @media (max-width: 900px){
@@ -328,4 +361,8 @@ footer{
 .displayY{
     display: none;
 }
+.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
 /* classes used with js */
