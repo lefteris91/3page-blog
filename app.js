@@ -54,10 +54,12 @@ topBtn.addEventListener('click',()=>{
 })
 
 setTimeout(() => {
-  
-  modal.classList.add('displayN')
-  modal.classList.remove('displayY') //modal reveal
-  disableA()
+  if (sessionStorage.getItem('firstVisit') === null){
+    modal.classList.add('displayN')
+    modal.classList.remove('displayY') //modal reveal
+    disableA()
+    sessionStorage.setItem('firstVisit', '1');
+  }
 }, 3000);
 
 setTimeout(()=>{
